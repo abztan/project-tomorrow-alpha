@@ -1,0 +1,558 @@
+<link href='http://fonts.googleapis.com/css?family=Quicksand|Crimson+Text|Hind|Roboto+Mono' rel='stylesheet' type='text/css'>
+<link href="_premade/hover-min.css" rel="stylesheet" media="all">
+
+<style type="text/css">
+<!--
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+
+fieldset{
+	border:1;
+	padding: 15 15 15 15;
+	border:1px solid #afafaf;
+}
+
+img{
+	padding: 0 0 0 0;
+}
+
+iframe{
+	padding: 0;
+	margin: 0;
+}
+
+}
+address,caption,cite,code,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+
+caption,th{
+	text-align:center;
+}
+
+h1{
+	color: #FF7260;
+	font-size:100%;
+	font-weight:normal;
+}
+
+
+h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+
+html,
+body {
+	font-family: 'Hind', san-serif;
+	background-color:#F7F7F7;
+}
+
+select {
+	height: 35px;
+  padding:3px;
+  margin: 0;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  background: #FFFFFF;
+  color:#888;
+  border:2px solid #bdc3c7;
+  display: inline-block;
+	outline-color: #1abc9c;
+  cursor:pointer;
+}
+
+select[disabled] {
+border-color: #1abc9c;
+}
+
+input, select {
+	min-width: 0px;
+}
+
+article {
+	padding: 0 40 40 40;
+	background: #F7F7F7;
+	min-height: 900px;
+	min-width: 1200px;
+}
+
+header {
+	background: #F7F7F7;
+	min-width: 1220px;
+}
+
+legend {
+	font-family: 'Crimson Text', serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: -0.012em;
+	word-spacing: -0.02em;
+	color: #FF7260;
+}
+
+label {
+	font-family:  'Hind', san-serif;
+	font-style: normal;
+	font-weight: 400;
+    display: inline-block;
+    width: auto;
+	padding: 15px 0px 0px 10px;
+	color: #343434;
+	font-size: 13pt;
+}
+
+th.rotate {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+	border-bottom: 2px solid #494949;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+th.rotate > div {
+  transform:
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+
+}
+
+th.rotate > div > span {
+  border-bottom: 1px solid #494949;
+  padding: 5px 10px;
+  width: 35px;
+}
+
+th.rotate1 {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+	border-bottom: 2px solid #1abc9c;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+th.rotate1 > div {
+  transform:
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+
+th.rotate1 > div > span {
+  border-bottom: 1px dashed gray;
+  padding: 5px 10px;
+  width: 35px;
+}
+
+th.rotate2 {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+th.rotate2 > div {
+  transform:
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+
+th.rotate2 > div > span {
+  border-bottom: 1px solid #FF7260;
+  padding: 5px 10px;
+  width: 35px;
+}
+
+th.rotate3 {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+th.rotate3 > div {
+  transform:
+    /* Magic Numbers */
+    translate(39px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+
+th.rotate3 > div > span {
+  border-bottom: 1px solid #494949;
+  padding: 5px 10px;
+  width: 35px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing:0;
+	white-space: nowrap;
+}
+
+tr,td{
+	padding: 10 10 10 10;
+	font-family: 'Hind', san-serif;
+}
+
+th {
+	border-bottom: 2px solid #1abc9c;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	padding: 10 10 10 10;
+}
+
+h2 {
+	padding: 15 0 15 0;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+	font-family: 'Crimson Text', serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 48px;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: -0.002em;
+	word-spacing: -0.01em;
+	color: #FF7260;
+}
+
+h3 {
+	font-family: 'Source Sans Pro';
+	font-weight: normal;
+	font-size: 15px;
+	color: #1abc9c;
+}
+
+footer {
+    background:#FF5B3F;
+	height: 5px;
+    width: 100%;
+    bottom: 0;
+}
+#stickyheader {
+                        width: 100%;
+                        height: 10px;
+                }
+
+#t_numvalue {
+	text-align: right;
+}
+
+#t_strvalue {
+	text-align: left;
+}
+
+#listtable {
+	width: 1200px;
+}
+
+#nav{
+	background:#494949;
+  list-style:none;
+  float:left; /* Clear floats */
+	position: fixed;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+  z-index:5;
+	font-size:18pt;
+	width: 100%;
+	min-width: 1200px;
+}
+#nav li{
+    float:left;
+    position:relative;
+}
+
+#nav a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+		color: white;
+}
+
+#nav a:hover{
+	opacity: 0.9;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+    float:none;
+}
+
+#nav li:hover ul{ /* Display the dropdown on hover */
+    left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background:#5E5E5E;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background:#F4F4F4;
+	color: #FF7260;
+	z-index:5;
+}
+
+#sup {
+	font-family: 'Quicksand', sans-serif;
+	min-height: 50px;
+	font-size: 30px;
+	font-style: strong;
+	font-weight: 800;
+	text-align:right;
+    background: 0;
+    color:#494949;
+	display: none;
+    border:0px solid #FFFFFF;
+    display: inline-block;
+	outline-color: #FFFFFF;
+	-webkit-appearance:none;
+
+}
+
+#sublist{
+font-size:13pt;
+padding: 3 0 0 0;
+}
+
+#content {
+	align: center;
+	padding-top: 60px;
+	padding-bottom:5px;   /* Height of the footer element */
+}
+
+#col1 {
+	background:;
+	padding: 10 10 10 10;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+#col2{
+	background:;
+	padding: 10 10 10 10;
+	display: inline-block;
+
+}
+
+#col3{
+	background:;
+	padding: 10 10 10 10;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#col4{
+	background:;
+	padding: 10 30 20 30;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mapcol{
+	background:#F7F7F7;
+	padding: 10 30 20 30;
+	display: inline-block;
+	opacity: 0.99;
+}
+
+#mapdiv {
+
+	padding: 10px 10px 10px 10px;
+	width:400px;
+	height:350px;
+	border:1px solid #1abc9c;
+	z-index: 0;
+}
+
+#text_style1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:35pt;
+	color:#505050;
+}
+
+#text_style2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:45pt;
+	color:#FF7260;
+	font-weight: bold;
+}
+
+#text_style3 {
+	color:#FF7260;
+	font-weight: bold;
+}
+
+#tr_style1 {
+	border-bottom: 0px solid #dbdada;
+}
+
+#td_style1 {
+	border-right: 3px solid #FF7260;
+}
+
+#td_style2 {
+	border-right: 2px dashed gray;
+	/*border-top: 1px solid #1abc9c;
+	border-bottom: 1px solid #1abc9c;*/
+	border-left: 1px solid #1abc9c;
+
+}
+
+#td_style3 {
+	border-right: 3px solid #494949;
+}
+
+#th_style1 {
+	border-bottom: 0px solid blue;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	padding: 10 10 10 10;
+}
+
+#td_counter {
+	border-right: 1px solid #dbdada;
+	text-align: right;
+}
+
+#numeric {
+	font-family: 'Roboto Mono';
+	font-size: 11pt;
+}
+
+.box {
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+}
+
+a:link {
+  text-decoration: none;
+	color: ;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+	color: ;
+}
+
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+  display:block;
+  clear:both;
+  content:'';
+}
+
+.tab-links li {
+  margin:0px 5px -15px;
+  float:left;
+  list-style:none;
+}
+
+.tab-links a {
+  padding:9px 15px;
+  display:inline-block;
+  border-radius:3px 3px 0px 0px;
+  background:#494949;
+  font-size:16px;
+  font-weight:200;
+  color:#FFF;
+  transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+  background:#5E5E5E;
+  text-decoration:none;
+	color:#FF7260;
+}
+
+li.active a, li.active a:hover {
+  background:#dedede;
+  color:#FF7260;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+  padding:15px;
+  border-radius:3px;
+  box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+  background:#dedede;
+}
+
+.tab {
+  display:none;
+}
+
+.tab.active {
+  display:block;
+}
+/*----- End of Tabs -----*/
+
+
+
+-->
+</style>

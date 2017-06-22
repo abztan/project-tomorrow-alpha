@@ -1,0 +1,52 @@
+function isduplicate_Pastor($lname,$fname,$mname,$bday)
+{
+	$conn_string = "host=localhost port=5432 dbname=ProjectTomorrow user=postgres password=password";
+	$dbconn = pg_connect($conn_string) or die("Can't connect to database".pg_last_error());
+
+	
+	$query = "SELECT *
+					FROM list_pastor
+					WHERE lastname = '$lname'
+					AND firstname = '$fname'
+					AND middlename = '$mname'
+					AND birthday = '$bday'";
+					
+	$result = pg_query($dbconn, $query);
+	$row = pg_fetch_array($result,NULL,PGSQL_BOTH);
+	$pid = $row['id'];
+	
+	if($pid == "")
+	{
+		$result = "False";
+	}
+	else
+		$result = "True";
+		
+	return $result;
+}
+
+function isduplicate_Church($cname,$cprovince,$ccity,$cbarangay)
+{
+	$conn_string = "host=localhost port=5432 dbname=ProjectTomorrow user=postgres password=password";
+	$dbconn = pg_connect($conn_string) or die("Can't connect to database".pg_last_error());
+	
+	$query = "SELECT *
+					FROM list_church
+					WHERE churchname ilike '%$cname%'
+					AND province = '$cprovince'
+					AND city = '$ccity'
+					AND barangay = '$cbarangay'";
+					
+	$result = pg_query($dbconn, $query);
+	$row = pg_fetch_array($result,NULL,PGSQL_BOTH);
+	$cid = $row['churchid'];
+	
+	
+	
+	if($cid == "" || $cid == NULL)
+		$result = "False";
+	else
+		$result = "True";
+		
+	return $result;
+}

@@ -1,0 +1,56 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 11pt;
+}
+fieldset {
+  padding: 20 20 20 20;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #C70025;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+a:hover,a:focus {
+  color: #C70025;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+#menu li {
+  display: inline;
+
+}
+
+.profile_label {
+  display: inline-block;
+  width: 144px;
+  text-align: left;
+  padding: 4px 4px 4px 4px;
+}
+
+.profile_value {
+  color: #C70025;
+}
+
+.default_a {
+  display: inline-block;
+  width: 24px;
+  text-align: right;
+}
+
+/*toggle*/
+
+.toggle_area {
+  display: none;
+  padding: 4px 4px 4px 4px;
+}
+
+.expand {
+  padding: 4px 4px 4px 4px;
+}

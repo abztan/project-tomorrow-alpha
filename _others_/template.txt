@@ -1,0 +1,33 @@
+<?php
+session_start();
+
+if(empty($_SESSION['username']))
+	header('location: /ICM/Login.php?a=2');
+	$username = $_SESSION['username'];
+	include_once "_ptrFunctions.php";
+?>
+
+<style type="text/css">
+</style>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>X</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-red.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+</head>
+
+<body>
+<form name='form1' action='' id='profile_form' method='POST'>
+<span id="notice"></span>
+<div class="mdl-grid">
+</div>
+</form>
+
+<script type="text/javascript">
+</script>
+</body>
+</html>
